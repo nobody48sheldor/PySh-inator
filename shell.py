@@ -93,7 +93,7 @@ def exec(n, cmd, PATH):
                 for i in filei.readlines():
                     fileo.write(i + "\n")
     if n == 13:
-        os.system('mkdir {}'.format(cmd.split(" ", 1)[-1]))
+        os.mkdir(cmd.split(" ", 1)[-1])
 
 
 
